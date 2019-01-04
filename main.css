@@ -1,63 +1,72 @@
 
-
-.typing > *{
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typingAnim 5s steps(50);
+html {
+  scroll-behavior: smooth;
 }
 
 #highlight {
   color: orange;
 }
 
-#highlight-link {
-  color: red;
-}
-
-@keyframes typingAnim{
-  from { width: 0 }
-  to { width: 100%}
-}
-@keyframes typingSpeak{
-  0% { width: 1em; height: .1em }
-  100% { width: 1em; height: .5em; }
-}
-
 #maincont {
   padding-top: 150px;
-  padding-bottom: 140px;
+  padding-bottom: 70px;
   font-size: 20px;
 }
-.triangle {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid black;
-    padding-left: 30px;
-}
+
 img {
-  width: 1000px;
+  width: 1500px;
 }
-#langcont {
-  background-color: #ED1C24;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-#langs {
-  background-color: white;
-  padding: 50px;
-  padding-bottom: 10px;
-}
+
 #brimg {
   background-image: url(href = "icons.png");
   background-repeat:space;
 }
 p[name = "things"] {
-    padding-left: 70px;
+    padding-left: 20px;
 }
-#projects {
-  padding-top: 30px;
+div[name = "projects"]{
+  padding-top: 70px;
   padding-bottom: 80px;
   align-items: center;
+  background-color: #ED1C24;
+  z-index: -1;
+}
+
+div[name = "pro-card"] {
+  padding-top: 30px;
+  padding-left: 0;
+  padding-bottom: 40px;
+}
+#projecthead {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: -18px;
+  font-size: 100px;
+}
+
+#abouthead {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: -20px;
+  font-size: 100px;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6E2594;
+  text-decoration: none;
+}
+
+.center-block {
+   margin-left:auto;
+   margin-right:auto;
+   display:block;
+}
+
+#email {
+  font-size: 50px;
 }
